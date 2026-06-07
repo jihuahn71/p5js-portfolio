@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:black;
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(#FFE81F 1px, transparent 1px);
+    background-size:50px 50px, 120px 120px;
+    background-position:0 0, 25px 25px;
+    min-height:100vh;
+    padding:30px;
+    color:white;
+}
+
+header{
+    text-align:center;
+    margin-bottom:45px;
+    perspective:600px;
+}
+
+header h1{
+    color:#FFE81F;
+    font-size:3.5rem;
+    letter-spacing:3px;
+    text-shadow:
+        0 0 10px #FFE81F,
+        0 0 20px #FFE81F,
+        0 0 35px #FFE81F;
+    margin-bottom:12px;
+    transform:rotateX(28deg);
+}
+
+header p{
+    color:#cccccc;
+    font-size:1.1rem;
+}
+
+#projects{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.cell{
+    aspect-ratio:16/9;
+    overflow:hidden;
+    border:3px solid #FFE81F;
+    border-radius:15px;
+    background:#111;
+    box-shadow:
+        0 0 12px #FFE81F,
+        0 0 25px rgba(255,232,31,0.6);
+    transition:0.3s;
+    position:relative;
+}
+
+.cell:hover{
+    transform:scale(1.03);
+    box-shadow:
+        0 0 25px #FFE81F,
+        0 0 50px #FFE81F;
+}
+
+.cell iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:600px;
+    height:400px;
+    border:none;
+    transform:scale(0.5);
+    transform-origin:top left;
+}
