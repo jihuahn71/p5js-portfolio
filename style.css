@@ -25,7 +25,7 @@ header{
 
 header h1{
     color:#FFE81F;
-    font-size:3.5rem;
+    font-size:3.2rem;
     letter-spacing:3px;
     text-shadow:
         0 0 10px #FFE81F,
@@ -49,7 +49,7 @@ header p{
 }
 
 .cell{
-    aspect-ratio:16/9;
+    height:250px;
     overflow:hidden;
     border:3px solid #FFE81F;
     border-radius:15px;
@@ -68,9 +68,19 @@ header p{
         0 0 50px #FFE81F;
 }
 
+.cell h2{
+    height:38px;
+    line-height:38px;
+    text-align:center;
+    color:#FFE81F;
+    font-size:1.1rem;
+    background:#000;
+    border-bottom:2px solid #FFE81F;
+}
+
 .cell iframe{
     position:absolute;
-    top:0;
+    top:38px;
     left:0;
     width:600px;
     height:400px;
